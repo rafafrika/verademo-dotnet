@@ -1,0 +1,41 @@
+stages:
+  - build
+  - veracode_sca
+  - veracode_policy_scan
+  - veracode_pipeline_scan
+
+variables:
+  SOLUTION: '**/*.sln'
+  BUILD_PLATFORM: 'Any CPU'
+  BUILD_CONFIGURATION: 'Release'
+
+build_job:
+  stage: build
+  image: mcr.microsoft.com/dotnet/sdk:latest
+  script:
+    - apt-get update
+    - apt-get install -y nuget
+    - ls
+    - cd ./Verademo-Dotnet
+    - ls
+    - cd ../
+    - nuget restore ./*.sln
+    - msbuild Verademo-dotnet.sln /p:Configuration=$BUILD_CONFIGURATION
+
+veracode_sca_job:
+  stage: veracode_sca
+  image: mcr.microsoft.com/dotnet/sdk:latest
+  script:
+    - echo "Veracode SCA"
+
+veracode_policy_scan_job:
+  stage: veracode_policy_scan
+  image: mcr.microsoft.com/dotnet/sdk:latest
+  script:
+    - echo "Veracode Policy Scan"
+
+veracode_pipeline_scan_job:
+  stage: veracode_pipeline_scan
+  image: mcr.microsoft.com/dotnet/sdk:latest
+  script:
+    - echo "Veracode Pipeline Scan"
