@@ -1,0 +1,20 @@
+{
+  "SerializedFilePath": "c:\\Users\\Rafael Marinho\\Desktop\\Dev\\gitlab\\verademo-dotnet\\Verademo-dotnet\\obj\\Debug\\project.razor.json",
+  "FilePath": "c:\\Users\\Rafael Marinho\\Desktop\\Dev\\gitlab\\verademo-dotnet\\Verademo-dotnet\\Verademo-dotnet.csproj",
+  "Configuration": {
+    "ConfigurationName": "UnsupportedRazor",
+    "LanguageVersion": "1.0",
+    "Extensions": [
+      {
+        "ExtensionName": "UnsupportedRazorExtension"
+      }
+    ]
+  },
+  "ProjectWorkspaceState": {
+    "TagHelpers": [],
+    "CSharpLanguageVersion": 703
+  },
+  "RootNamespace": null,
+  "Documents": [],
+  "SerializationFormat": "0.3"
+}
