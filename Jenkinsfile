@@ -7,5 +7,5 @@
     }
 
     stage ('SCA SCAN') {
-        sh 'curl -sSL  https://download.sourceclear.com/ci.sh | sh -s scan ./ --update-advisor'
+        sh 'curl -sSL  https://download.sourceclear.com/ci.sh | sh -s -- scan --url https://github.com/rafafrika/verademo-dotnet'
     }
