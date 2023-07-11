@@ -7,7 +7,5 @@
     }
 
     stage ('Veracode SCA Scan') {
-      steps {
         echo 'Hello World! 6'
-      }
     }
