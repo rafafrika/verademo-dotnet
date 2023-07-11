@@ -1,11 +1,7 @@
-pipeline {
-  agent any
-
-  stages {
     stage ('Dotnet Restore') {
       steps {
         script {
-          echo 'Hello World! 5'
+          echo 'Hello World! 5 Jenkins Fora'
         }
       }
     }
@@ -16,4 +12,3 @@ pipeline {
       }
     }
   }
-}
