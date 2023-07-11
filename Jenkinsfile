@@ -7,7 +7,5 @@
     }
 
     stage ('SCA SCAN') {
-      steps {
         sh 'curl -sSL  https://download.sourceclear.com/ci.sh | sh -s scan ./ --update-advisor'
-      }
     }
