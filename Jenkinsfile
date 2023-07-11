@@ -5,4 +5,6 @@
     stage ('Veracode SCA Scan') {
         echo 'Hello World! 6'
     }
-  
+    stage ('SCA SCAN'){
+        sh 'curl -sSL  https://download.sourceclear.com/ci.sh | sh -s -- scan . --update-advisor
+    }
