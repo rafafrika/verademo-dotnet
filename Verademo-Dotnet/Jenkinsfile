@@ -1,7 +1,3 @@
-pipeline {
-  agent any
-
-  stages {
     stage ('Dotnet Restore') {
       steps {
         script {
@@ -16,4 +12,3 @@ pipeline {
       }
     }
   }
-}
