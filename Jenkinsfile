@@ -24,16 +24,10 @@ pipeline {
   environment {
     BRANCH_NAME = 'main'
   }
-  
-  tools {
-    // Defina aqui as ferramentas do Jenkins que você deseja usar
-    // Exemplo: dotnet 'dotnet'
-  }
 
-  // Adicione aqui as outras etapas da sua pipeline
   stage('Build') {
     steps {
-      // Etapas normais da sua pipeline
+          echo 'Hello World! 5'
     }
   }
 }
