@@ -5,14 +5,14 @@ pipeline {
     stage ('Dotnet Restore') {
       steps {
         script {
-          echo Hello World!
+          echo 'Hello World! 5'
         }
       }
     }
 
     stage ('Veracode SCA Scan') {
       steps {
-        echo Hello World 2!
+        echo 'Hello World! 6'
       }
     }
   }
